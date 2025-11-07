@@ -1,12 +1,21 @@
-const mysql = require('mysql');
-const express = require('express');
-const app = express();
+const express = require("express");
+//npm install mysql2 --save
+const mysql = require("mysql2");
+//npm install cors --save
+const cors = require("cors");
 
+const app = express();
+const port = 3000;
+
+app.use(cors());
+app.use(express.json());
+
+//Host, user, password database
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'yourUsername',
-    password: 'yourPassword',
-    database: 'yourDatabaseName'
+    host: "localhost",
+    user: "root",
+    password: "1mTURNT!",
+    database: "chinook"
 });
 
 connection.connect();
