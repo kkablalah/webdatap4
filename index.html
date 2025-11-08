@@ -2,40 +2,83 @@
 <html lang="da">
 <head>
     <meta charset="UTF-8">
-    <title>Musikbutik: Musik gennem tiden</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Soundtrack to the World</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-    <h1>Musik gennem genrer</h1>
-    <div class="subtitle">“Fra klassisk til moderne – en rejse gennem musikalske stilarter.”</div>
+<header class="hero">
+    <h1 class="hero-title">Soundtrack to the World</h1>
+    <p class="hero-subtitle">Tag med på en tur gennem musikkens dataunivers.</p>
+    <div class="pulse-bg"></div> <!-- Til baggrundsanimation -->
 </header>
-<main class="site-main">
-    <section class="section info">
-        <strong>Budskab:</strong> <br>
-        Analysen undersøger, hvordan forskellige musikgenrer og kunstnere repræsenterer bredden i Chinook-databasen – fra klassisk musik og jazz til rock, metal og pop.
-        Selvom databasen ikke indeholder årstal, kan udviklingen i musikstile og variationen i kataloget bruges som et billede på musikkens udvikling og mangfoldighed.
-    </section>
-    <section class="section">
-        <strong>Formål:</strong>
-        <ul>
-            <li>At skabe en visuel fortælling om musikalske forskelle og udvikling i stil og udtryk.</li>
-            <li>Analysen skal vise, hvordan Chinooks katalog spænder over mange genrer, og hvordan hver genre repræsenterer sin egen periode eller stemning i musikhistorien.</li>
-        </ul>
-    </section>
-    <section class="section">
+
+<main>
+    <section class="info-section">
+        <h2>Afklaring af kommunikation og målgruppe</h2>
+        <div class="info-block">
+            <strong>Formål:</strong>
+            <p>
+                Formålet med projektet Soundtrack to the World er at tage brugeren med på en digital rejse gennem den musik, verden lytter til – ikke som et regneark, men som en oplevelse.<br>
+                Vi ønsker at vise, hvordan genrer, kunstnere og lande tilsammen skaber et globalt soundtrack – et mix af rytmer, smag og stemninger. <br>
+                Hjemmesiden skal give fornemmelsen af, at data også kan føles som musik, og at tal kan fortælle historier på en levende måde.
+            </p>
+
+            <strong>Kommunikation:</strong>
+            <ul>
+                <li>Hvad lytter man mest til i forskellige lande?</li>
+                <li>Hvilke genrer dominerer globalt?</li>
+                <li>Hvilke kunstnere skaber det moderne verdenssoundtrack?</li>
+                <li>Rejse mellem lande for at se dominerende genre.</li>
+                <li>Se, hvilke kunstnere der sætter rytmen i forskellige dele af verden.</li>
+                <li>Datapointer og observationer fx “Rock styrer i USA, Latin i Sydamerika”.</li>
+            </ul>
+        </div>
+
+        <strong>Budskab:</strong>
+        <p>
+            Musik er universel – men lyden af verden skifter alt efter, hvor du står.<br>
+            Gennem data kan vi høre forskellene, se rytmen og mærke beatet i den globale musikscene.<br>
+            Vores kommunikation skal give brugeren en følelse af sammenhæng mellem mennesker, kulturer og musiksmag – fortalt gennem levende visualiseringer og interaktivt design.
+        </p>
         <strong>Målgruppe:</strong>
         <ul>
-            <li>Musikinteresserede kunder</li>
-            <li>Kulturformidlere</li>
-            <li>Chinooks marketingafdeling (til storytelling om musikalsk diversitet)</li>
+            <li>Musikinteresserede brugere</li>
+            <li>Unge digitale brugere (16–35 år)</li>
+            <li>Sociale medier-brugere og nysgerrige dataentusiaster</li>
         </ul>
     </section>
-    <section class="section">
-        <div id="chart-container">
-            <!-- JavaScript chart kommer her -->
+
+    <section class="section section-map">
+        <h2>Verdens rytmer</h2>
+        <div id="map-container">
+            <!-- Interaktivt kort med genre pr. land -->
+        </div>
+    </section>
+
+    <section class="section section-hits">
+        <h2>De store hits</h2>
+        <div id="chart-hits">
+            <!-- Bar chart: Top 10 mest solgte kunstnere -->
+        </div>
+    </section>
+
+    <section class="section section-genres">
+        <h2>Genrer der vokser</h2>
+        <div id="chart-genres">
+            <!-- Linjediagram: Genres udvikling over tid -->
+        </div>
+    </section>
+
+    <section class="section section-mediatype">
+        <h2>Sådan lytter vi</h2>
+        <div id="chart-mediatype">
+            <!-- Pie chart: MediaType (MP3, AAC, MPEG) -->
         </div>
     </section>
 </main>
+
+<footer class="footer">
+    <blockquote class="slogan">Music is universal – but the beat depends on where you stand.</blockquote>
+</footer>
 </body>
 </html>

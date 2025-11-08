@@ -1,52 +1,101 @@
 body {
     margin: 0;
-    padding: 0;
-    background: #f4f4f8;
     font-family: 'Segoe UI', Arial, sans-serif;
-    color: #222;
+    background: #f5f7fa;
+    color: #20232a;
 }
 
-.site-header {
-    background: #343a40;
+header.hero {
+    position: relative;
+    background: #141c3a;
     color: #fff;
-    padding: 30px 0 15px 0;
     text-align: center;
+    padding: 48px 20px 70px 20px;
+    overflow: hidden;
 }
 
-.site-header h1 {
-    margin: 0;
-    font-size: 2.2em;
+.hero-title {
+    font-size: 2.7em;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
 }
 
-.subtitle {
-    font-size: 1.15em;
-    font-style: italic;
-    color: #c0c8cc;
+.hero-subtitle {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
-.site-main {
-    padding: 30px 15px;
-    max-width: 650px;
-    margin: 36px auto;
+.pulse-bg {
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 60px;
+    background: radial-gradient(ellipse at center, #07478033 0%, #141c3a00 80%);
+    opacity: 0.6;
+    animation: pulseMove 2.5s infinite alternate;
+}
+@keyframes pulseMove {
+    0% { opacity: 0.4; }
+    100% { opacity: 0.6; }
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 16px 40px 16px;
     background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 2px 14px rgba(20,30,40,0.05);
+    border-radius: 16px 16px 4px 4px;
+    box-shadow: 0 2px 15px rgba(40,55,100,0.09);
+}
+
+.info-section {
+    background: #e7edf7;
+    border-left: 5px solid #606af0;
+    padding: 24px;
+    margin-bottom: 38px;
+    border-radius: 10px;
+}
+
+.info-block ul, .info-section ul {
+    margin-left: 2em;
 }
 
 .section {
-    margin-bottom: 38px;
+    margin-bottom: 45px;
 }
 
-.info {
-    background: #eaf0f8;
-    border-left: 5px solid #4176c5;
-    padding: 16px;
-    margin-bottom: 30px;
+.section h2 {
+    margin-top: 0;
+    font-size: 1.45em;
+    color: #2845a4;
+}
+
+#map-container, #chart-hits, #chart-genres, #chart-mediatype {
+    width: 100%;
+    min-height: 210px;
+    background: #f6fafe;
     border-radius: 8px;
-    color: #22335a;
+    border: 1px solid #dce2ea;
+    box-shadow: 0 1px 8px rgba(120,130,180,0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
 }
 
-#chart-container {
-    min-height: 180px;
-    padding: 12px 0;
+.footer {
+    border-top: 1px solid #e0e8ee;
+    margin-top: 35px;
+    padding: 22px;
+    text-align: center;
+    background: #f4f4fa;
+}
+
+.slogan {
+    font-size: 1.15em;
+    font-style: italic;
+    color: #2a3354;
+    margin: 0;
 }
