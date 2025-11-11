@@ -1,0 +1,14 @@
+[
+	{
+		"Artist" : "Iron Maiden",
+		"TotalSales" : 4.95
+	},
+	{
+		"Artist" : "Led Zeppelin",
+		"TotalSales" : 4.95
+	},
+	{
+		"Artist" : "Battlestar Galactica",
+		"TotalSales" : 3.98
+	}
+]
