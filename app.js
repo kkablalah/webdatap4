@@ -25,28 +25,31 @@ fetch("globalChart.json")
                 labels: labels,
                 datasets: [{
                     data: values,
-                    backgroundColor: ["red", "orange", "yellow", "green", "blue", "purple"]
+                    backgroundColor: ["#5C6BC0", "#FBC02D", "#81C784", "#4DB6AC", "#FF8A65"]
                 }]
             }
         });
 });
 
 // Chart 3 - Top 1 Artist & Songs
-fetch('/query3.json')
+fetch('querie3.json')
     .then(res => res.json())
     .then(data => {
+
+        console.log(data)
+
         const labels = data.map(item => item.Artist);
         const sales = data.map(item => item.TotalSales);
 
-        const ctx = document.getElementById('artistChart').getContext('2d');
+        const ctx = document.getElementById("artistChart").getContext('2d');
         const myChart = new Chart(ctx, {
-            type: 'bar',
+            type: 'doughnut',
             data: {
                 labels: labels,
                 datasets: [{
                     label: 'Total Sales',
                     data: sales,
-                    backgroundColor: 'rgba(75,192,192,0.2)',
+                    backgroundColor: ["#5C6BC0", "#FBC02D", "#81C784"],
                     borderColor: 'rgba(75,192,192,1)',
                     borderWidth: 1,
                 }]
@@ -70,7 +73,8 @@ fetch('querie4.json')
         const datasets = data.map(item => ({
             label: item.Genre,
             data: labels.map(year => item[year]),
-            borderColor: randomColor(),
+            backgroundColor: ["#BA68C8", "#FBC02D", "#FF8A65"],
+            borderColor: ["#BA68C8", "#FBC02D", "#FF8A65"],
             fill: false,
             tension: 0.3
         }));
@@ -96,9 +100,3 @@ fetch('querie4.json')
     })
     .catch(error => console.error('Error fetching JSON:', error));
 
-
-// Farver
-function randomColor() {
-    const colors = ['#E74C3C', '#3498DB', '#2ECC71', '#9B59B6', '#F1C40F', '#E67E22'];
-    return colors[Math.floor(Math.random() * colors.length)];
-}
