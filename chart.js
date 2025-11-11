@@ -8,7 +8,7 @@ fetch('querie4.json')
     })
     .then(data => {
         console.log('Data loaded:', data);
-
+// delete me
         // 🔹 Labels = årstal (fra første objekt)
         const labels = Object.keys(data[0]).filter(key => /^\d{4}$/.test(key));
 
