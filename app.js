@@ -1,5 +1,22 @@
-// Chart 1 - Top Genre by Country – World Map
+/*const express = require("express");
+const mysql = require("mysql2");
+const cors = require("cors");
 
+const app = express();
+const port = 3100;
+
+app.use(cors());
+
+//Host, user, password database
+const connection = mysql.createConnection({
+    host: process.env.DBHOST,
+    user: process.env.DBUSER,
+    password: process.env.DBPASSWORD,
+    database: process.env.DBDATABASE
+});*/
+
+
+// Chart 1 - Top Genre by Country – World Map
 
 //Chart 2 - Hvilke genre dominere globalt?
 // Hent data fra JSON-filen
