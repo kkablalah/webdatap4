@@ -19,7 +19,7 @@ fetch("globalChart.json")
         const values = [...top4.map(item => item.PercentShare), other];
 
         // Lav pie chartet
-        new Chart(document.getElementById("chart-global"), {
+        new Chart(document.getElementById("globalChart"), {
             type: "pie",
             data: {
                 labels: labels,
@@ -38,7 +38,7 @@ fetch('/query3.json')
         const labels = data.map(item => item.Artist);
         const sales = data.map(item => item.TotalSales);
 
-        const ctx = document.getElementById('chart-artistSongs').getContext('2d');
+        const ctx = document.getElementById('artistChart').getContext('2d');
         const myChart = new Chart(ctx, {
             type: 'bar',
             data: {
@@ -76,7 +76,7 @@ fetch('querie4.json')
         }));
 
         // 🔹 Tegn grafen
-        const ctx = document.getElementById('chart-growth');
+        const ctx = document.getElementById('growthChart');
         new Chart(ctx, {
             type: 'line',
             data: { labels, datasets },

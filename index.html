@@ -24,18 +24,24 @@
 
 <main class="container">
     <!-- 3 charts in a flex row -->
-    <div class="row">
-        <div class="card">
-            <h2>Global Genre</h2>
-            <canvas id="chart-global"></canvas>
+    <div class="charts">
+        <div class="top-row">
+            <div class="chart">
+                <h2>Global Genre</h2>
+                <canvas id="globalChart"></canvas>
+            </div>
+
+            <div class="chart">
+                <h2>Top 1 Artist & Songs</h2>
+                <canvas id="artistChart"></canvas>
+            </div>
         </div>
-        <div class="card">
-            <h2>Top 1 Artist & Songs</h2>
-            <canvas id="chart-artistSongs"></canvas>
-        </div>
-        <div class="card">
-            <h2>Genre Growth Popularity</h2>
-            <canvas id="chart-growth"></canvas>
+
+        <div class="bottom-row">
+            <div class="chart">
+                <h2>Genre Growth Popularity</h2>
+                <canvas id="growthChart"></canvas>
+            </div>
         </div>
     </div>
 </main>
