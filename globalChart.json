@@ -1,0 +1,98 @@
+[
+  {
+    "Genre" : "Rock",
+    "PercentShare" : 37.3
+  },
+  {
+    "Genre" : "Latin",
+    "PercentShare" : 17.2
+  },
+  {
+    "Genre" : "Metal",
+    "PercentShare" : 11.8
+  },
+  {
+    "Genre" : "Alternative & Punk",
+    "PercentShare" : 10.9
+  },
+  {
+    "Genre" : "Jazz",
+    "PercentShare" : 3.6
+  },
+  {
+    "Genre" : "Blues",
+    "PercentShare" : 2.7
+  },
+  {
+    "Genre" : "TV Shows",
+    "PercentShare" : 2.1
+  },
+  {
+    "Genre" : "Classical",
+    "PercentShare" : 1.8
+  },
+  {
+    "Genre" : "R&B/Soul",
+    "PercentShare" : 1.8
+  },
+  {
+    "Genre" : "Reggae",
+    "PercentShare" : 1.3
+  },
+  {
+    "Genre" : "Pop",
+    "PercentShare" : 1.3
+  },
+  {
+    "Genre" : "Drama",
+    "PercentShare" : 1.3
+  },
+  {
+    "Genre" : "Sci Fi & Fantasy",
+    "PercentShare" : 0.9
+  },
+  {
+    "Genre" : "Soundtrack",
+    "PercentShare" : 0.9
+  },
+  {
+    "Genre" : "Hip Hop/Rap",
+    "PercentShare" : 0.8
+  },
+  {
+    "Genre" : "Bossa Nova",
+    "PercentShare" : 0.7
+  },
+  {
+    "Genre" : "World",
+    "PercentShare" : 0.6
+  },
+  {
+    "Genre" : "Alternative",
+    "PercentShare" : 0.6
+  },
+  {
+    "Genre" : "Electronica/Dance",
+    "PercentShare" : 0.5
+  },
+  {
+    "Genre" : "Heavy Metal",
+    "PercentShare" : 0.5
+  },
+  {
+    "Genre" : "Easy Listening",
+    "PercentShare" : 0.4
+  },
+  {
+    "Genre" : "Comedy",
+    "PercentShare" : 0.4
+  },
+  {
+    "Genre" : "Rock And Roll",
+    "PercentShare" : 0.3
+  },
+  {
+    "Genre" : "Science Fiction",
+    "PercentShare" : 0.3
+  }
+]

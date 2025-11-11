@@ -48,3 +48,33 @@ function randomColor() {
     const colors = ['#E74C3C', '#3498DB', '#2ECC71', '#9B59B6', '#F1C40F', '#E67E22'];
     return colors[Math.floor(Math.random() * colors.length)];
 }
+
+//Chart 2 - Hvilke genre dominere globalt?
+// Hent data fra JSON-filen
+fetch("globalChart.json")
+    .then(response => response.json()) // lav teksten om til data
+    .then(data => {
+        data.sort((a, b) => b.PercentShare - a.PercentShare);
+
+        // Tag de 4 største
+        const top4 = data.slice(0, 4);
+
+        // Læg resten sammen som "Other"
+        const other = data.slice(4).reduce((sum, item) => sum + item.PercentShare, 0);
+
+        // Lav labels og værdier
+        const labels = [...top4.map(item => item.Genre), "Other"];
+        const values = [...top4.map(item => item.PercentShare), other];
+
+        // Lav pie chartet
+        new Chart(document.getElementById("chart-global"), {
+            type: "pie",
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: values,
+                    backgroundColor: ["red", "orange", "yellow", "green", "blue", "purple"]
+                }]
+            }
+        });
+});
