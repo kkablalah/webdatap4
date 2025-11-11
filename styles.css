@@ -6,8 +6,8 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background: #999B84;
-    color: #F4EEED;
+    background: #90A4AE;
+    color: #ECEFF1;
 }
 
 /* ------ Header ------ */
@@ -22,7 +22,7 @@ body {
 
 .head p {
     margin: 0;
-    color: #aaa;
+    color: #B0BEC5;
 }
 
 /* ----- Container ------*/
@@ -35,8 +35,8 @@ body {
 /*----- World map (øverst) ----- */
 .worldmap {
     text-align: center;
-    background: #999B84;
-    border: 2px solid #2a2a2a;
+    background: #90A4AE;
+    border: 2px solid #607D8B;
     padding: 20px;
     border-radius: 10px;
     margin: 24px;
@@ -80,7 +80,7 @@ body {
 
 /* Bokse generelt */
 .chart {
-    background: black;
+    background: #263238;
     border-radius: 16px;
     padding: 20px;
     flex: 1;
